@@ -30,3 +30,10 @@ footer a:hover { color: white; text-decoration: underline; }
     color: #000;
     border: 0;
 }
+
+/* cool-ass background */
+.cool-background {
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
