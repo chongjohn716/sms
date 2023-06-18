@@ -4,7 +4,7 @@
 {% block lead %}<b>Welcome to iGEM 2023!</b> Your team has been approved and you are ready to start the iGEM season!{% endblock %}
 
 {% block page_content %}
-
+<div id="bubble" style="position: absolute; width: 100px; height: 100px; background-color: red; border-radius: 50%; top: 100px;">this is a floating bubble</div>
 <div class="row">
   <div class="col">
     <h2>Before you start</h2>
@@ -56,5 +56,12 @@
     </ul>
   </div>
 </div>
+<script>
+  // just a draft!
+  let bb = document.getElementById('bubble');
+  let sine = 0;
+  let qq = setInterval(() => { bb.style.top = (Math.sin(sine) * 25 + 100) + 'px'; sine+=0.1}, 80);
+  // Math.sin(sine) * (amplitude) + (original position) + 'px'; sine += (gap between frames, 0.1 recommended)
+</script>
 
 {% endblock %}
