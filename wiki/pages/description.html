@@ -70,13 +70,16 @@ i commented these off. dont delete -- might need future reference. xxq
   <div class="col-lg-4">
     <ul class="toc">
       <li><a href="#prob">Defining the Problem</a></li>
-      <li><a href="impo">Importance and Necessity</a></li>
+      <li><a href="#impo">Importance and Necessity</a></li>
+      <li><a href="#insp">Inspiration</a></li>
+      <li><a href="#oura">Our Approach</a></li>
     </ul>
   </div>
   <div class="col-lg-8">
     <h1 id="prob">Defining the Problem</h1>
     <hr/>
     <p>Influenza A and influenza B are two kinds of epidemic diseases that are relatively easy to spread in China. We hope to use the CRISPR/Cas12 system combined with fluorescent signals to detect the presence of influenzas A and B from air samples in places prone to large-scale outbreaks of said influenzas (Kellner et al. vol.; Gootenberg et al. vol.), so as to accurately prevent and control the spread of influenzas A and B.</p>
+    
     <h1 id="impo">Importance and Necessity</h1>
     <hr/>
     <div style="display: flex">
@@ -91,7 +94,20 @@ i commented these off. dont delete -- might need future reference. xxq
     </div>
     <p>Worldwide, these annual epidemics are estimated to result in about 3 to 5 million cases of severe illness, and about 290 000 to 650 000 respiratory deaths.</p>
     <p>An estimated 1 billion people worldwide are infected by seasonal influenza every year. Out of those 1 billion, about 3-5 million people have a severe case of flu each year. Globally, an estimated 290,000 – 650,000 deaths occur due to flu each year.</p>
-    <h2>References</h2>
+    
+    <h1 id="insp">Inspiration</h1>
+    <hr/>
+    <p>There have been abundant groundbreaking advancements in the field of molecular diagnostics these years, and we are inspired by the opportunity to make a meaningful impact on the prevention and control of influenzas A and B. Having witnessed the devastating consequences of large-scale outbreaks of these viruses, we are driven to develop a solution that can rapidly detect their presence in air samples, specifically in places where these outbreaks are more prevalent. The remarkable capabilities of the CRISPR/Cas12 system, coupled with the use of fluorescence signals, offer a promising avenue for achieving our goal. We recognize that by developing a rapid detection system, we can provide vital information that would enable timely interventions and help safeguard public health. The potential to expand the application of our research to other respiratory pathogens further fueled our motivation, as we know that our work could have a lasting impact on global health. With passion and determination, we are committed to advancing this project and contributing to a world where the spread of influenzas A and B can be prevented and controlled.</p>
+    
+    <h1 id="oura">Our Approach</h1>
+    <hr/>
+    <p>Lab plans to implement SHERLOCK (RPA+CRISPR Cas13 detection)</p>
+    <h2>The principle of CRISPR system</h2>
+    <p>When bacteria discover the invader's DNA, they will integrate a small segment of foreign DNA into a specific location in the CRISPR genome. This piece of DNA is like a bacterial family remembering the specific number of the invader.</p>
+    <p>They began transcribing the CRISPR sequence into a pre crRNA, while also producing a helper RNA called tracrRNA. These two types of RNA will combine with Cas protein to form a complex, and they will select the appropriate crRNA based on the interval sequence RNA/DNA of the invader. Finally, RNase III will assist the complex in performing some cleavage of crRNA based on the sequence of the invader.</p>
+    <p>Once the target is found, the complex will form a special structure with DNA, and crRNA will complement and pair with a portion of the target DNA. This precise positioning system can help us detect a specific subtype of influenza A.</p>
+    <p>There are schemes that involve pre-amplification of virus sequences with multiplex RT-RPA, followed by concurrent detection of RNA viruses/viroid using separate Cas12a visual assays in parallel. Although this method is not truly a one-tube multiplex detection and requires additional steps of transferring amplification products to the different tubes for the virus/viroid-specific Cas12a/crRNA step, it can achieve simultaneous detection of two targets without the need for complex equipment or precise temperatures. Once the CRISPR system finds the target gene, the corresponding Cas13 will start the shear enzyme activity and shear the corresponding fluorescent Reporter gene, thus releasing fluorescence signals. Therefore the purpose of merging the detection of numerous subtypes of influenza A can be realized because of this specificity.</p>
+    <h1>References</h1>
     <hr/>
     <p><a href="baidu.com">a link</a></p>
   </div>
