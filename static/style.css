@@ -19,7 +19,7 @@ footer a:hover { color: white; text-decoration: underline; }
 
 /* nav bar */
 .navbar {
-    background-color: #1d1d1d !important;
+    background-color: #000 !important;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fffb !important;
@@ -42,6 +42,18 @@ body {
 p {
     text-align: justify;
     color: var(--accent);
+}
+
+/* toc */
+.toc {
+	position: sticky;
+	top: 76px;
+	background-color: #555;
+	border-radius: 10px;
+	padding: 10px;
+}
+.toc ul {
+    margin: 0;
 }
 
 /* cool-ass background */
