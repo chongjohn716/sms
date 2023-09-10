@@ -3,7 +3,27 @@
 {% block title %}Home{% endblock %}
 {% block lead %}<b>Welcome to iGEM 2023!</b> Your team has been approved and you are ready to start the iGEM season!{% endblock %}
 
+{% import 'macros/111.html' as aaa_fn %}
+
+{% block banner_mode%}fullscreen{% endblock %}
+
 {% block page_content %}
+
+
+  {% block xxx%} 
+  <div class="row mt-4">
+    <div class="col">
+      <h2>Styling your wiki</h2>
+      <hr>
+      <p>Feel free to customize the page styling according to your preferences, or you can simply leave the style as it is. It's wise to focus on a clear content first, and on a clean design later.</p>
+      <p>Be cautious with the size of the assets like images, videos, and more into your wiki. Large file sizes can hinder the presentation of wikis due to slow internet connections. Remember to compress large files before uploading them to iGEM servers.</p>
+      <p>This default wiki meets the requirements, enhances navigability, and provides a user-friendly experience for visitors. You should not feel obliged to go beyond the provided styling.</p>
+    </div>
+  </div>
+  {% endblock %}
+
+  {{aaa_fn.form(xxx, value='1111',method='2222')}}
+
 <div id="bubble" style="position: absolute; width: 100px; height: 100px; background-color: red; border-radius: 50%; top: 100px;">this is a floating bubble</div>
 <div class="row">
   <div class="col">
@@ -63,5 +83,6 @@
   let qq = setInterval(() => { bb.style.top = (Math.sin(sine) * 25 + 100) + 'px'; sine+=0.1}, 80);
   // Math.sin(sine) * (amplitude) + (original position) + 'px'; sine += (gap between frames, 0.1 recommended)
 </script>
+
 
 {% endblock %}

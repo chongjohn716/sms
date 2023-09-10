@@ -30,6 +30,12 @@ def home():
 def pages(page):
     return render_template(str(Path('pages')) + '/' + page.lower() + '.html')
 
+@app.route('/<macro>')
+def macros(macro):
+    hpath = str(Path('pages')) + '/' + macro.lower() + '.html'
+    print(hpath)
+    return render_template(hpath)
+
 # Main Function, Runs at http://0.0.0.0:8080
 if __name__ == "__main__":
-    app.run(port=8080)
+    app.run(port=8080, debug=True)

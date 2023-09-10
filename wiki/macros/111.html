@@ -1,0 +1,17 @@
+{% import 'macros/222.html' as aaa_fn %}
+
+{% macro vvv(action) %}
+<div>
+  <div style="color:red">{{action}}</div>
+</div>
+{% endmacro %}
+
+{% macro form(action,value='bb',method='cc') %}
+<div>
+  <div>{{action}}</div>
+  <div>{{value}}</div>
+  <div>{{method}}</div>
+  {{aaa_fn.form('asdfsd')}}
+  {{vvv('ccccccc')}}
+</div>
+{% endmacro %}
