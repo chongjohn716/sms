@@ -10,11 +10,17 @@
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
 
+    <!-- Bootstrap icons CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'bootstrap-icons.css') }}">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'animate.min.css') }}" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'aos.css') }}" />
+
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>{% block title %}{% endblock %} | SMS-Shenzhen - iGEM 2023</title>
 
 </head>
@@ -27,15 +33,15 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
-          <h1 class="display-4 text-white mt-5 mb-2">{{ self.title() }}</h1>
-	        <p class="lead mb-5 text-white-50">{% block lead %}{% endblock %}</p>
+          <h1 class="display-4 text-white mt-5 mb-2" data-aos="fade-right">{{ self.title() }}</h1>
+	        <p class="lead mb-5 text-white-50" data-aos="fade-right" data-aos-delay="300">{% block lead %}{% endblock %}</p>
         </div>
       </div>
     </div>
   </header>
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container {% block page_class_name %}{% endblock %}">
     {% block page_content %}{% endblock %}
   </div>
 
@@ -46,6 +52,7 @@
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'aos.js') }}"></script>
   <script src="{{ url_for('static', filename = 'app.js') }}"></script>
 </body>
 </html>

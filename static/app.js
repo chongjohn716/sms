@@ -45,17 +45,26 @@ const APP_CMD = function (key, ...rest) {
     document.documentElement.scrollTop = 0
   }
 
-  function start() {
+  function init() {
     scrollToTop();
     bindGlobalEvent()
+    setupAOS()
   }
-
-  document.onreadystatechange = (e) => {
+  function setupAOS(){
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  }
+  
+  window.onload = (e) => {
     if (document.readyState !== 'complete') {
       return
     }
-    start()
-    document.onreadystatechange = null;
+    init()
+    window.onload = null;
   }
 
   const expose = {
